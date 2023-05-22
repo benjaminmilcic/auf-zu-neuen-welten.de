@@ -13,6 +13,7 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,13 +26,14 @@ import { ToastrModule } from 'ngx-toastr';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
