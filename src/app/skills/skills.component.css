@@ -1,0 +1,101 @@
+section {
+  background-color: rgb(29, 128, 159);
+  display: flex;
+  padding: 7.5rem 20rem 10rem;
+}
+
+.skills-wrapper {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(236, 184, 7);
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 2rem;
+  color: white;
+  margin: 3rem 0rem;
+  text-align: center;
+
+}
+
+.l-and-t-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.languages-and-tools {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100px;
+}
+
+.item-wrapper img {
+  height: 70px;
+}
+
+.item-wrapper p {
+  color: white;
+  font-weight: 900;
+  font-size: 0.75rem;
+}
+
+.workflow-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.workflow {
+  max-width: 1300px;
+  width: 100%;
+  list-style: none;
+}
+
+.workflow li {
+  margin-left: 3rem;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.workflow li span {
+    margin-right: 1rem;
+}
+
+a {
+  background-color: blue;
+  border-radius: 10px;
+  background-color: #ecb807;
+  border-radius: 0.25rem;
+  color: black;
+  padding: 1.75rem 3rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #efc32c;
+}
+
+a:active {
+  box-shadow: 0 0 0 0.25rem rgba(201, 156, 6, 0.5);
+}
+
+.button-wrapper {
+  margin-top: 6rem;
+  text-align: center;
+}

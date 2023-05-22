@@ -1,0 +1,123 @@
+section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 7.5rem 20rem 10rem;
+}
+
+h3 {
+  color: rgb(236, 184, 7);
+  margin: 0px;
+  font-size: 1rem;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item img,
+.portfolio-item .portfolio-caption {
+  transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+  -webkit-clip-path: inset(-1px);
+  clip-path: inset(-1px);
+}
+
+.portfolio-item:hover img,
+.portfolio-item:hover .portfolio-caption {
+  -webkit-clip-path: inset(2rem);
+  clip-path: inset(2rem);
+}
+
+.portfolio-item:hover .portfolio-caption .portfolio-caption-content {
+  visibility: visible;
+  background-color: rgba(29, 128, 159, 0.7);
+}
+
+.portfolio-image-wrapper {
+  position: relative;
+  max-width: 530px;
+  overflow: hidden;
+}
+
+.portfolio-image {
+  max-width: 530px;
+  aspect-ratio: auto;
+}
+
+.portfolio-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.portfolio-item .portfolio-caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .portfolio-caption .portfolio-caption-content {
+  visibility: hidden;
+  padding: 3.5rem;
+  transition: background-color 0.7s;
+  text-align: left;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-caption-header {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.portfolio-caption-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.contact-button {
+  background-color: blue;
+  border-radius: 10px;
+  background-color: #212529;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 1.75rem 3rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-button:active {
+  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+
+.button-wrapper {
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 992px) {
+section {
+  padding: 7.5rem 0rem 10rem;
+}
+
+  .portfolio-image-wrapper {
+    max-width: 130px;
+  }
+
+  .portfolio-image {
+    max-width: 130px;
+  }
+}

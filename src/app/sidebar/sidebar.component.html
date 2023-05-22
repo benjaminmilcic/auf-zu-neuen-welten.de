@@ -1,0 +1,52 @@
+<a (click)="onToggleSidebar($event)" class="menu-toggle" href="#"
+  ><i class="fas fa-bars"></i
+></a>
+<nav id="sidebar-wrapper" [ngClass]="{ active: sidebarActivated }">
+  <ul>
+    <li class="sidebar-brand">
+      <a href="#header">
+        <img src="favicon.ico" />
+      </a>
+    </li>
+    <li>
+      <a href="#header">
+        <div class="sidebar-item">
+          <i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#about">
+        <div class="sidebar-item">
+          <i class="fa-solid fa-user"></i>
+          <p>About me</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#skills">
+        <div class="sidebar-item">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <p class="col ms-2">Skills</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#portfolio">
+        <div class="sidebar-item">
+          <i class="fa-solid fa-toolbox"></i>
+          <p>Portfolio</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#contact">
+        <div class="sidebar-item">
+          <i class="fa-solid fa-id-card"></i>
+          <p>Contact</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>

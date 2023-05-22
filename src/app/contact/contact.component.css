@@ -1,0 +1,95 @@
+section {
+  background-image: url(../../assets/contact.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7.5rem 0rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+hr {
+  border: 0.5px solid gray;
+}
+
+.invitation {
+  color: #6c757d;
+  margin-top: 2rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.5rem;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+}
+
+.first-name,
+.last-name,
+.email,
+.message,
+.send-button {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 15px;
+}
+
+.first-name,
+.last-name {
+  width: 50%;
+}
+
+.first-name {
+  margin-right: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.first-name input,
+.last-name input,
+.email input,
+.message textarea {
+  width: 100%;
+  border-radius: 5px;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: solid 1px red;
+}
+
+button {
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  background-color: #1d809f;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover:not(button:disabled) {
+  background-color: #155d74;
+}
+
+button:active:not(button:disabled) {
+  box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
+}
+
+button:disabled {
+  opacity: 0.5;
+}

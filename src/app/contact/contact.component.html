@@ -1,0 +1,44 @@
+<section id="contact">
+  <div>
+    <h2>Let's Get In Touch!</h2>
+    <hr />
+    <p class="invitation">
+      Ready to start your next project with me?
+      <br/>
+      Send me a message with the contact form. Or contact me via email or phone!
+    </p>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="name">
+        <div class="first-name">
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" ngModel required />
+        </div>
+        <div class="last-name">
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" id="last-name" ngModel required>
+        </div>
+      </div>
+      <div class="email">
+        <label for="email">eMail</label>
+        <input type="email" name="email" id="email" ngModel required email>
+      </div>
+      <div class="message">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" ngModel required></textarea>
+      </div>
+      <div class="send-button">
+        <button [disabled]="!form.valid" type="submit">Senden</button>
+      </div>
+    </form>
+    <div class="contact-wrapper">
+      <div>
+        <p><i class="fa-solid fa-phone"></i></p>
+        <p class="phone">+49 176 41942532</p>
+      </div>
+      <div>
+        <p><i class="fa-solid fa-envelope"></i></p>
+        <a href="mailto:benjamin.milcic@gmail.com">benjamin.milcic@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
