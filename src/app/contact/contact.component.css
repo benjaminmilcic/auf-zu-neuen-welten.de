@@ -18,7 +18,8 @@ hr {
 }
 
 .invitation {
-  color: #6c757d;
+  color: white;
+  font-weight: 700;
   margin-top: 2rem;
 }
 
@@ -92,4 +93,37 @@ button:active:not(button:disabled) {
 
 button:disabled {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+section {
+  
+  padding: 7.5rem 3rem;
+}
+
+  .name {
+    flex-direction: column;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .firstname,
+  .lastname {
+    width: 100%;
+  }
+
+  .firstname input,
+  .lastname input,
+  .email input,
+  .message textarea {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-button {
+    padding: 1.3rem 2rem;
+  }
 }

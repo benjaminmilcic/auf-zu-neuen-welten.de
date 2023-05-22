@@ -1,7 +1,7 @@
 section {
   background-color: rgb(29, 128, 159);
   display: flex;
-  padding: 7.5rem 20rem 10rem;
+  padding: 7.5rem 0rem 10rem;
 }
 
 .skills-wrapper {
@@ -15,12 +15,22 @@ h2 {
   font-weight: 900;
 }
 
+.header-wrapper1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-wrapper2 {
+  width: 900px;
+  margin: 0rem 7.5rem;
+}
+
 h3 {
   font-size: 2rem;
   color: white;
   margin: 3rem 0rem;
-  text-align: center;
-
+  text-align: left;
 }
 
 .l-and-t-wrapper {
@@ -32,7 +42,7 @@ h3 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1300px;
+  max-width: 900px;
 }
 
 .item-wrapper {
@@ -44,7 +54,8 @@ h3 {
 }
 
 .item-wrapper img {
-  height: 70px;
+  width: 48px;
+  height: 48px;
 }
 
 .item-wrapper p {
@@ -59,7 +70,7 @@ h3 {
 }
 
 .workflow {
-  max-width: 1300px;
+  max-width: 900px;
   width: 100%;
   list-style: none;
 }
@@ -72,11 +83,10 @@ h3 {
 }
 
 .workflow li span {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 a {
-  background-color: blue;
   border-radius: 10px;
   background-color: #ecb807;
   border-radius: 0.25rem;
@@ -98,4 +108,49 @@ a:active {
 .button-wrapper {
   margin-top: 6rem;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .workflow li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    padding: 1.3rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .item-wrapper {
+    width: 60px;
+  }
+
+  .item-wrapper img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .workflow li {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .workflow li {
+    margin-left: 0rem;
+  }
 }

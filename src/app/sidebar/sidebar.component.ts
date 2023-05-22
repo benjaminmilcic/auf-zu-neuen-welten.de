@@ -7,8 +7,12 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 })
 export class SidebarComponent {
   sidebarActivated: boolean = false;
-  onToggleSidebar(event: Event) {
-    event.preventDefault();
+
+  onToggleSidebar(event: Event | null) {
+    if (event) {
+      event.preventDefault();
+    }
+
     this.sidebarActivated = !this.sidebarActivated;
 
     // this is necessary because ngClass does not work with FontAwesome CSS Libary
@@ -23,5 +27,9 @@ export class SidebarComponent {
       menuOpen.classList.remove('fa-xmark');
       menuOpen.classList.add('fa-bars');
     }
+  }
+
+  onClick() {
+    this.onToggleSidebar(null);
   }
 }
