@@ -27,7 +27,7 @@
         <textarea name="message" id="message" cols="30" rows="10" ngModel required></textarea>
       </div>
       <div class="send-button">
-        <button [disabled]="!form.valid" type="submit">Senden</button>
+        <button [disabled]="!form.valid || isSending" type="submit">{{sendButtonText}}</button>
       </div>
     </form>
     <div class="contact-wrapper">
