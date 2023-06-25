@@ -114,7 +114,7 @@ h2 {
   background-color: #212529;
   border-radius: 0.25rem;
   color: white;
-  padding: 1.75rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
@@ -156,8 +156,7 @@ h2 {
   }
 
   .portfolio-caption-text {
-  font-size: 1rem;
-
+    font-size: 1rem;
   }
 
   .portfolio-item .portfolio-caption {
@@ -175,12 +174,12 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .contact-button {
-    padding: 1.3rem 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 400px) {
-  
   .portfolio-item .portfolio-caption {
     max-width: 240px;
   }

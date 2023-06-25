@@ -13,7 +13,8 @@ h2 {
 }
 
 img {
-  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
   margin-bottom: 1rem;
 }
 
@@ -28,7 +29,7 @@ a {
   background-color: #212529;
   border-radius: 0.25rem;
   color: white;
-  padding: 1.75rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
@@ -44,8 +45,8 @@ a:active {
 
 @media screen and (max-width: 600px) {
   a {
-    padding: 1.3rem 2rem;
-    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
   }
 }
 

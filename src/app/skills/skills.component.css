@@ -1,7 +1,7 @@
 section {
   background-color: rgb(29, 128, 159);
   display: flex;
-  padding: 7.5rem 0rem 10rem;
+  padding: 5rem 0rem 10rem;
 }
 
 .skills-wrapper {
@@ -91,7 +91,7 @@ a {
   background-color: #ecb807;
   border-radius: 0.25rem;
   color: black;
-  padding: 1.75rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
@@ -127,8 +127,8 @@ a:active {
 
 @media screen and (max-width: 600px) {
   a {
-    padding: 1.3rem 2rem;
-    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
   }
 }
 
