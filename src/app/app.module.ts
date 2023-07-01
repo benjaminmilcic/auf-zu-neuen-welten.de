@@ -26,14 +26,14 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ScrollToTopComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -3,5 +3,13 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem 0rem;
+  padding: 1rem 0rem;
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 0.75rem;
+  }
 }

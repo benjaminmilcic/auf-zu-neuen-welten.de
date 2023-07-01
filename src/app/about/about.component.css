@@ -2,29 +2,45 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 7.5rem 7.5rem 10rem;
+  padding: 3rem 3rem 10rem;
+  /* background-color: #22c1c3; */
+  /* background: rgb(34, 193, 195); */
+  background: linear-gradient(
+    35deg,
+    rgba(29, 128, 159, 0.5) 0%,
+    rgba(236, 184, 7, 0.5) 100%
+  );
 }
 
-h2 {
+/* #1d809f */
+
+h3 {
   font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
+  margin-bottom: 4rem;
+  /* font-weight: 700; */
+  text-align: center;
 }
 
 img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   margin-bottom: 1rem;
+  float: left;
+  margin-right: 20px;
 }
 
-p {
-  font-size: 1.25rem;
+.about {
+  font-size: 1.2rem;
   margin-bottom: 3rem;
   font-weight: 400;
+  max-width: 900px;
 }
 
-a {
+ul {
+  overflow: auto;
+}
+
+.button {
   border-radius: 10px;
   background-color: #212529;
   border-radius: 0.25rem;
@@ -35,24 +51,36 @@ a {
   cursor: pointer;
 }
 
-a:active {
+.button:active {
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
 }
 
 .button-wrapper {
   margin-top: 6rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  a {
+  section {
+    padding: 3rem 3rem 3rem;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+
+  .button {
     padding: 0.75rem 1.5rem;
     font-size: 0.75rem;
   }
-}
 
-@media screen and (max-width: 400px) {
-  h2 {
-    font-size: 1.5rem;
+  img {
+    float: none;
   }
-
 }

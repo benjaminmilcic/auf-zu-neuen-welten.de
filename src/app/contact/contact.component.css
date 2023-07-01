@@ -1,12 +1,17 @@
 section {
-  background-image: url(../../assets/contact.webp);
+  /* background-image: url(../../assets/contact.webp);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  background: linear-gradient(
+    180deg,
+    rgba(236, 184, 7, 1) 0%,
+    rgba(29, 128, 159, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 7.5rem 0rem;
+  padding: 3rem 0rem;
 }
 
 h2 {
@@ -77,29 +82,35 @@ textarea.ng-invalid.ng-touched {
 button {
   padding: 1rem 3rem;
   border-radius: 5px;
-  background-color: #1d809f;
-  color: white;
+  /* background-color: #1d809f; */
+  background-color: #ecb807;
+  color: black;
   cursor: pointer;
   border: none;
 }
 
 button:hover:not(button:disabled) {
-  background-color: #155d74;
+  background-color: #efc32c;
+  /* background-color: #155d74; */
 }
 
 button:active:not(button:disabled) {
-  box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
+  /* box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5); */
+  box-shadow: 0 0 0 0.25rem rgba(201, 156, 6, 0.5);
 }
 
 button:disabled {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) {
-section {
-  
-  padding: 7.5rem 3rem;
+a, a:hover, a:visited, a:active  {
+  color: black;
 }
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 3rem 3rem;
+  }
 
   .name {
     flex-direction: column;
@@ -120,6 +131,10 @@ section {
   .message textarea {
     max-width: 95%;
   }
+
+  h2 {
+  font-size: 1.5rem;
+}
 }
 
 @media screen and (max-width: 600px) {

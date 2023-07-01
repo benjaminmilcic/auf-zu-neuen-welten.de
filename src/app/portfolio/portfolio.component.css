@@ -2,20 +2,20 @@ section {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 7.5rem 0rem 10rem;
+  padding: 3rem 0rem 10rem;
+  /* background-color: #fdbb2d99; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 h3 {
-  color: rgb(236, 184, 7);
-  margin: 0px;
-  font-size: 1rem;
-}
-
-h2 {
-  margin: 0px;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  font-weight: 900;
+  /* color: rgb(236, 184, 7); */
+  margin-bottom: 4rem;
+  font-size: 2rem;
 }
 
 .portfolio-item {
@@ -40,7 +40,16 @@ h2 {
 
   .portfolio-item:hover .portfolio-caption .portfolio-caption-content {
     visibility: visible;
-    background-color: rgba(29, 128, 159, 0.7);
+    /* background-color: rgba(29, 128, 159, 0.7); */
+    justify-content: center;
+  }
+
+  .portfolio-item:hover
+    .portfolio-image-wrapper
+    .portfolio-link-wrapper
+    .portfolio-overlay {
+    opacity: 0.7;
+    transition: opacity 0.25s ease-out;
   }
 }
 
@@ -85,8 +94,7 @@ h2 {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: #efc32c;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .portfolio-item .portfolio-caption .portfolio-caption-content {
@@ -97,6 +105,7 @@ h2 {
   color: white;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .portfolio-caption-header {
@@ -128,10 +137,64 @@ h2 {
   margin-top: 6rem;
 }
 
+dialog {
+  border-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 4px #c5c1c1;
+  height: 80%;
+  width: 80%;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-close {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  color: white;
+}
+
+.dialog-close:hover {
+  color: black;
+}
+
+.vocabulary-trainer,
+.catchcups {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catchcups img {
+  width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.vocabulary-trainer div {
+  margin: 20px;
+}
+
+.web-app-image {
+  width: 400px;
+}
+
+.android-app-image {
+  width: 200px;
+}
+
 @media (hover: none) {
+  .portfolio-item {
+    margin-bottom: 60px;
+    margin-right: 20px;
+  }
+
   .portfolio-item .portfolio-caption {
     background-color: transparent;
-    position: relative;
+    align-items: start;
+    top: -50px;
   }
 
   .portfolio-item .portfolio-caption .portfolio-caption-content {
@@ -144,15 +207,25 @@ h2 {
   a {
     text-decoration: none;
   }
+
+  .button-wrapper {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .catchcups img {
+    width: 125px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 7.5rem 3rem 10rem;
+    padding: 3rem 3rem 10rem;
   }
 
-  h2 {
-    font-size: 2rem;
+  h3 {
+    font-size: 1.5rem;
   }
 
   .portfolio-caption-text {
@@ -173,9 +246,21 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
+  section {
+    padding: 3rem 3rem 3rem;
+  }
+
   .contact-button {
     padding: 0.75rem 1.5rem;
     font-size: 0.75rem;
+  }
+
+  .web-app-image {
+    width: 250px;
+  }
+
+  .android-app-image {
+    width: 125px;
   }
 }
 
