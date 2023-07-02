@@ -8,20 +8,20 @@
     </div>
     <div>
       <h2>Vocabulary Trainer</h2>
-      <div class="vocabulary-trainer">
+      <div>
         <div>
-          <p>Web App to learn Croatian language</p>
+          <p>Web App for learning Croatian language. Made with Angular.</p>
           <img
             class="web-app-image"
-            src="../../assets/LearnLanguageApp.webp"
+            src="../../assets/learnlanguageapp.webp"
             alt="A Web App to learn Croatian Language"
           />
-          <div>
-            <a href="https://vocabularyinputapp.web.app/" target="_blank"
-              >https://vocabularyinputapp.web.app/</a
+          <div style="margin-top: 10px;">
+            <a href="https://vocabularyinputapp.web.app" target="_blank"
+              >https://vocabularyinputapp.web.app</a
             >
           </div>
-          <div>
+          <div style="margin-top: 10px;">
             <a
               href="https://github.com/benjaminmilcic/LearnLanguageApp"
               target="_blank"
@@ -29,8 +29,11 @@
             >
           </div>
         </div>
-        <div>
-          <p>Android App to learn Croatian language</p>
+        <div style="margin-top: 40px;">
+          <p>
+            Android App for learning Croatian language. Made with Angular and
+            Ionic.
+          </p>
           <img
             class="android-app-image"
             src="../../assets/androidApp.webp"
@@ -61,21 +64,26 @@
     <div class="dialog-close">
       <a (click)="catchCupDialog.close()"><b>X</b></a>
     </div>
-    <div>
+    <div class="cc">
       <h2>CatchCups</h2>
       <div style="margin-bottom: 10px">
-        <a href="https://catchcups.com/" target="_blank"
-          >https://catchcups.com/</a
+        <a href="https://catchcups.com" target="_blank"
+          >https://catchcups.com</a
         >
       </div>
-      <div style="margin-bottom: 20px">
-        Android App im Auftrag der Firma
-        <a href="https://codext.de/" target="_blank">Codext GmbH</a>
+      <div class="cc-text" style="margin-bottom: 20px">
+        <p>
+          On behalf of the company
+          <a href="https://codext.de/" target="_blank">Codext GmbH</a>, I worked
+          on a mobile app that evaluates measurement data from an irrigation
+          system for lawns. The app was made with Angular and Ionic.
+        </p>
       </div>
       <div class="catchcups">
-        <img src="../../assets/catchCups1.webp" alt="CatchCups" />
-        <img src="../../assets/catchCups2.webp" alt="CatchCups" />
-        <img src="../../assets/catchCups3.webp" alt="CatchCups" />
+        <img src="../../assets/catchcups1.webp" alt="CatchCups" />
+        <img src="../../assets/catchcups2.webp" alt="CatchCups" />
+        <img src="../../assets/catchcups3.webp" alt="CatchCups" />
+        <img src="../../assets/catchcups4.webp" alt="CatchCups" />
       </div>
       <div style="margin-top: 20px">
         <a
@@ -89,9 +97,36 @@
       </div>
     </div>
   </dialog>
+  <dialog #webaroDialog style="background-color: #efc32c; color: black">
+    <div class="dialog-close">
+      <a (click)="webaroDialog.close()"><b>X</b></a>
+    </div>
+    <div class="webaro">
+      <h2>Webaro</h2>
+      <div class="webaro-text">
+        <p>
+          For the company <a href="https://webaro.de" target="_blank"
+            >Weber Agrar Robotik GmbH</a
+          >, I worked on the further
+          development of a web app for the efficient planning and evaluation of
+          drone data in the agricultural sector. Realized with Angular, on
+          behalf of <a href="https://codext.de" target="_blank">Codext GmbH</a>.
+        </p>
+      </div>
+      <div>
+        <img src="../../assets/webaro.webp" alt="Weber Agrar Robotik GmbH" />
+        <img src="../../assets/webaro1.webp" alt="Weber Agrar Robotik GmbH" />
+        <img src="../../assets/webaro2.webp" alt="Weber Agrar Robotik GmbH" />
+        <img src="../../assets/webaro3.webp" alt="Weber Agrar Robotik GmbH" />
+      </div>
+      <div style="margin-top: 20px">
+        <a href="https://webaro.dev" target="_blank">https://webaro.dev</a>
+      </div>
+    </div>
+  </dialog>
   <div>
     <h3>Portfolio</h3>
-    <div class="wrapper">
+    <div class="wrapper1">
       <div class="portfolio-item">
         <a
           style="cursor: pointer"
@@ -144,6 +179,51 @@
             </div>
           </div>
         </a>
+      </div>
+    </div>
+    <div class="wrapper2">
+      <div class="portfolio-item">
+        <a style="cursor: pointer" (click)="webaroDialog.showModal()">
+          <div class="portfolio-image-wrapper">
+            <div class="portfolio-link-wrapper">
+              <img
+                class="portfolio-image"
+                src="assets/webaro.webp"
+                alt="Learn Language App"
+              />
+              <div
+                class="portfolio-overlay"
+                style="background-color: #efc32c"
+              ></div>
+            </div>
+          </div>
+
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-content">
+              <div>
+                <p class="portfolio-caption-header">Webaro</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image-wrapper">
+          <div class="portfolio-link-wrapper">
+            <div style="width: 530px"></div>
+            <!-- <div
+              class="portfolio-overlay"
+            ></div> -->
+          </div>
+        </div>
+
+        <!-- <div class="portfolio-caption">
+          <div class="portfolio-caption-content">
+            <div>
+              <p class="portfolio-caption-header"></p>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
     <div class="button-wrapper">

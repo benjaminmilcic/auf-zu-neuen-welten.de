@@ -6,7 +6,8 @@ section {
   /* background-color: #fdbb2d99; */
 }
 
-.wrapper {
+.wrapper1,
+.wrapper2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -66,7 +67,8 @@ h3 {
 }
 
 .portfolio-image {
-  max-width: 530px;
+  width: 530px;
+  height: 245px;
   aspect-ratio: auto;
 }
 
@@ -178,11 +180,26 @@ dialog::backdrop {
 }
 
 .web-app-image {
-  width: 400px;
+  width: 1200px;
 }
 
 .android-app-image {
-  width: 200px;
+  width: 400px;
+}
+
+.webaro img {
+  margin: 5px;
+}
+
+.webaro-text,
+.cc-text {
+  display: flex;
+  justify-content: center;
+}
+
+.webaro-text p,
+.cc-text p {
+  max-width: 900px;
 }
 
 @media (hover: none) {
@@ -213,9 +230,58 @@ dialog::backdrop {
   }
 }
 
+@media (hover: none) and (max-width: 1099px) {
+  .wrapper1 :nth-child(1) {
+    order: 2;
+  }
+  .wrapper1 :nth-child(2) {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .webaro img,
+  .web-app-image {
+    width: 800px;
+  }
+
+  .android-app-image {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .webaro img,
+  .web-app-image {
+    width: 600px;
+  }
+
+  .android-app-image {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1074px) {
+  .wrapper1 :nth-child(1) {
+    order: 2;
+  }
+  .wrapper1 :nth-child(2) {
+    order: 1;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .catchcups img {
     width: 125px;
+  }
+
+  .webaro img,
+  .web-app-image {
+    width: 400px;
+  }
+
+  .android-app-image {
+    width: 150px;
   }
 }
 
@@ -241,7 +307,8 @@ dialog::backdrop {
   }
 
   .portfolio-image {
-    max-width: 360px;
+    width: 360px;
+    height: 166px;
   }
 }
 
@@ -254,13 +321,16 @@ dialog::backdrop {
     padding: 0.75rem 1.5rem;
     font-size: 0.75rem;
   }
+}
 
+@media screen and (max-width: 500px) {
+  .webaro img,
   .web-app-image {
     width: 250px;
   }
 
   .android-app-image {
-    width: 125px;
+    width: 100px;
   }
 }
 
@@ -274,6 +344,18 @@ dialog::backdrop {
   }
 
   .portfolio-image {
-    max-width: 240px;
+    width: 240px;
+    height: 111px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .webaro img,
+  .web-app-image {
+    width: 200px;
+  }
+
+  .android-app-image {
+    width: 75px;
   }
 }
