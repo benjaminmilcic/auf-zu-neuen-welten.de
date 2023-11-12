@@ -3,16 +3,25 @@
 ></a>
 <nav id="sidebar-wrapper" [ngClass]="{ active: sidebarActivated }">
   <ul>
-    <li class="sidebar-brand">
-      <a href="#header" (click)="onClick()">
+    <li>
+      <div class="sidebar-brand">
+        <div>
+          <a href="#header" (click)="onClick()">
         <img src="favicon.ico" />
       </a>
+        </div>
+        <div class="sidebar-flag">
+          <img *ngIf="language==='de'" (click)="toggleLanguage()" src="../../assets/svg/Flag_of_Germany.svg" width="24px" height="24px">
+          <img *ngIf="language==='en'" (click)="toggleLanguage()" src="../../assets/svg/Flag_of_the_United_Kingdom.svg" width="24px" height="24px">
+        </div>
+      </div>
+      
     </li>
     <li>
       <a href="#header" (click)="onClick()">
         <div class="sidebar-item">
           <i class="fa-solid fa-house"></i>
-          <p>Home</p>
+          <p>{{ "sidebar.home" | translate }}</p>
         </div>
       </a>
     </li>
@@ -20,7 +29,7 @@
       <a href="#about" (click)="onClick()">
         <div class="sidebar-item">
           <i class="fa-solid fa-user"></i>
-          <p>About me</p>
+          <p>{{ "sidebar.aboutMe" | translate }}</p>
         </div>
       </a>
     </li>
@@ -28,7 +37,7 @@
       <a href="#skills" (click)="onClick()">
         <div class="sidebar-item">
           <i class="fa-solid fa-screwdriver-wrench"></i>
-          <p class="col ms-2">Skills</p>
+          <p class="col ms-2">{{ "sidebar.skills" | translate }}</p>
         </div>
       </a>
     </li>
@@ -44,15 +53,15 @@
       <a href="#contact" (click)="onClick()">
         <div class="sidebar-item">
           <i class="fa-solid fa-id-card"></i>
-          <p>Contact</p>
+          <p>{{ "sidebar.contact" | translate }}</p>
         </div>
       </a>
     </li>
     <li>
       <a href="#footer" (click)="onClick()">
         <div class="sidebar-item">
-          <i class="fa-brands fa-github fa-lg"></i>
-          <p>GitHub</p>
+          <i class="fa-solid fa-link"></i>
+          <p>Links</p>
         </div>
       </a>
     </li>

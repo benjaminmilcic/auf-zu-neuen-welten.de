@@ -13,7 +13,13 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 
 @NgModule({
@@ -26,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,14 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      defaultLanguage: 'en',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

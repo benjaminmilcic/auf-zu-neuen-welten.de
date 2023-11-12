@@ -1,4 +1,6 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateSendButtonService } from '../shared/translate-send-button.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,6 +9,13 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 })
 export class SidebarComponent {
   sidebarActivated: boolean = false;
+
+  language: 'de' | 'en' = 'en';
+
+  constructor(
+    private translate: TranslateService,
+    private translateSendButtonService: TranslateSendButtonService
+  ) {}
 
   onToggleSidebar(event: Event | null) {
     if (event) {
@@ -31,5 +40,11 @@ export class SidebarComponent {
 
   onClick() {
     this.onToggleSidebar(null);
+  }
+
+  toggleLanguage() {
+    this.language = this.language === 'en' ? 'de' : 'en';
+    this.translate.use(this.language);
+    this.translateSendButtonService.translateSendButton.next();
   }
 }

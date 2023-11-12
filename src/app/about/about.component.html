@@ -1,45 +1,54 @@
 <section id="about">
+  <div id="cv-wrapper" [ngClass]="{ active: cvActivated }">
+    <ng-container *ngIf="cvActivated">
+      <div style="display: flex; justify-content: space-between">
+        <div (click)="toggleCv($event)" class="close-cv-button">
+          <p>X</p>
+        </div>
+        <p>{{ "about.curriculumVitae" | translate }}</p>
+        <div></div>
+      </div>
+      <object *ngIf="translateService.currentLang=='de'"
+        data="../../assets/CV_DE.pdf"
+        class="embeded-pdf"
+        type="application/pdf"
+      ></object>
+      <object *ngIf="translateService.currentLang=='en'"
+        data="../../assets/CV_EN.pdf"
+        class="embeded-pdf"
+        type="application/pdf"
+      ></object>
+    </ng-container>
+  </div>
+
   <div>
-    <h3>About me</h3>
-    <img src="assets/__5x7.jpg" />
-    <!-- <p>
-      I`m an Angular Frontend Developer.<br /><br />
-      I was born in Halle/Saale, a beautiful city in Germany.<br />
-      Currently, I am living on the island of Krk, Croatia.<br /><br />
-      I am married and have a child.<br /><br />
-      I love Web development, which I am doing since I was a teenager.
-    </p> -->
+    <h3>{{ "about.aboutMe" | translate }}</h3>
+    <div style="position: relative">
+      <img src="assets/__5x7.jpg" />
+      <div class="cv-button" (click)="toggleCv($event)">CV</div>
+    </div>
 
     <div class="about">
       <p>
-        I am an Angular Frontend Developer.<br /><br />
-        I am a career changer in this professional field, but have previously
-        created websites privately and worked with HTML, CSS, Javascript and
-        PHP.<br /><br />
-        In 2019 I took online courses to get started professionally in website
-        and mobile app development. For this, I worked through courses about
-        Angular and Ionic.<br /><br />
-        After that, I worked as a freelancer for two companies,
+        {{ "about.text1" | translate }}<br /><br />
+        {{ "about.text2" | translate }}<br /><br />
+        {{ "about.text3" | translate }}<br /><br />
+        {{ "about.text4" | translate }}
         <a href="https://www.itm-webdesign.com/" target="_blank"
           >ITM Webdesign</a
         >
-        and <a href="https://codext.de/" target="_blank">Codext GmbH</a>.<br />
-        I was involved in the further development of existing websites and
-        mobile apps with Angular and Ionic.<br />
-        During this work, I dealt with CSS frameworks Bootstrap and Tailwinds and
-        the Cypress test framework.<br /><br />
-        Furthermore, I have basic knowledge of backend programming.<br />
-        I wrote a few small REST APIs using Node.js, Nest.js and SQL.<br />
-        I'm currently reading up on programming with Java and Spring
-        Boot.<br /><br />
-        I speak excellent English and advanced Croatian. But my
-        mother tongue is German.<br/><br/>
-        I am married and have a child.
+        {{ "about.text5" | translate }}
+        <a href="https://codext.de/" target="_blank">Codext GmbH</a>.<br />
+        {{ "about.text6" | translate }}<br />
+        {{ "about.text7" | translate }}<br /><br />
+        {{ "about.text8" | translate }}<br /><br />
+        {{ "about.text9" | translate }}<br /><br />
+        {{ "about.text10" | translate }}
       </p>
     </div>
 
     <div class="button-wrapper">
-      <a href="#skills" class="button">My Skills</a>
+      <a href="#skills" class="button">{{ "about.mySkills" | translate }}</a>
     </div>
   </div>
 </section>

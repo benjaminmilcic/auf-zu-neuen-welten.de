@@ -10,29 +10,28 @@
       <h2>Vocabulary Trainer</h2>
       <div>
         <div>
-          <p>Web App for learning Croatian language. Made with Angular.</p>
+          <p>{{ "portfolio.vocabularyTrainer.text1" | translate }}</p>
           <img
             class="web-app-image"
             src="../../assets/learnlanguageapp.webp"
             alt="A Web App to learn Croatian Language"
           />
-          <div style="margin-top: 10px;">
+          <div style="margin-top: 10px">
             <a href="https://vocabularyinputapp.web.app" target="_blank"
               >https://vocabularyinputapp.web.app</a
             >
           </div>
-          <div style="margin-top: 10px;">
+          <div style="margin-top: 10px">
             <a
               href="https://github.com/benjaminmilcic/LearnLanguageApp"
               target="_blank"
-              >Source code</a
+              >{{ "portfolio.vocabularyTrainer.sourceCode" | translate }}</a
             >
           </div>
         </div>
-        <div style="margin-top: 40px;">
+        <div style="margin-top: 40px">
           <p>
-            Android App for learning Croatian language. Made with Angular and
-            Ionic.
+            {{ "portfolio.vocabularyTrainer.text2" | translate }}
           </p>
           <img
             class="android-app-image"
@@ -53,7 +52,7 @@
             <a
               href="https://github.com/benjaminmilcic/learn-language-android-app"
               target="_blank"
-              >Source code</a
+              >{{ "portfolio.vocabularyTrainer.sourceCode" | translate }}</a
             >
           </div>
         </div>
@@ -73,10 +72,9 @@
       </div>
       <div class="cc-text" style="margin-bottom: 20px">
         <p>
-          On behalf of the company
-          <a href="https://codext.de/" target="_blank">Codext GmbH</a>, I worked
-          on a mobile app that evaluates measurement data from an irrigation
-          system for lawns. The app was made with Angular and Ionic.
+          {{ "portfolio.catchCups.text1" | translate }}
+          <a href="https://codext.de/" target="_blank">Codext GmbH</a>,
+          {{ "portfolio.catchCups.text2" | translate }}
         </p>
       </div>
       <div class="catchcups">
@@ -105,12 +103,11 @@
       <h2>Webaro</h2>
       <div class="webaro-text">
         <p>
-          For the company <a href="https://webaro.de" target="_blank"
+          {{ "portfolio.webaro.text1" | translate }}
+          <a href="https://webaro.de" target="_blank"
             >Weber Agrar Robotik GmbH</a
-          >, I worked on the further
-          development of a web app for the efficient planning and evaluation of
-          drone data in the agricultural sector. Realized with Angular, on
-          behalf of <a href="https://codext.de" target="_blank">Codext GmbH</a>.
+          >{{ "portfolio.webaro.text2" | translate }}
+          <a href="https://codext.de" target="_blank">Codext GmbH</a>.
         </p>
       </div>
       <div>
@@ -227,7 +224,9 @@
       </div>
     </div>
     <div class="button-wrapper">
-      <a class="contact-button" href="#contact">Contact</a>
+      <a class="contact-button" href="#contact">{{
+        "portfolio.contact" | translate
+      }}</a>
     </div>
   </div>
 </section>

@@ -1,18 +1,32 @@
 <footer id="footer">
   <div>
-    <p>Visit me on GitHub</p>
-    <a href="https://github.com/benjaminmilcic" target="_blank"
-      ><i
-        class="fa-brands fa-github"
-        style="
-          color: #1d809f;
-          font-size: 48px;
-          border-radius: 50%;
-        "
+    <p>{{ "footer.visitMe" | translate }}</p>
+    <div style="display: flex;justify-content: center;">
+    <div style="margin-right: 10px">
+      <a href="https://github.com/benjaminmilcic" target="_blank">
+        <i
+          class="fa-brands fa-github"
+          style="color: #1d809f; font-size: 48px; border-radius: 50%"
+          onmouseover="this.style.color='#155d74';"
+          onmouseout="this.style.color='#1d809f';"
+        ></i
+      ></a>
+      <p>GitHub</p>
+    </div>
+    <div style="margin-left: 10px">
+      <a href="https://stackoverflow.com/users/20271366/benjamin" target="_blank"> <i
+        class="fa-brands fa-stack-overflow"
+        style="color: #1d809f; font-size: 48px; border-radius: 50%"
         onmouseover="this.style.color='#155d74';"
         onmouseout="this.style.color='#1d809f';"
-      ></i
-    ></a>
+      ></i></a>
+     
+      <p>StackOverflow</p>
+    </div>
+    
+    </div>
+    
+
     <p>Copyright &copy; Benjamin Milčić 2023</p>
   </div>
 </footer>

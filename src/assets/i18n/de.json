@@ -1,0 +1,66 @@
+{
+  "header": {
+    "developer": "Entwickler",
+    "findOutMore": "Erfahre mehr"
+  },
+  "about": {
+    "aboutMe": "Über mich",
+    "text1": "Ich bin ein Angular Frontend Entwickler.",
+    "text2": "Ich bin Quereinsteiger in diesem Berufsfeld, habe aber zuvor privat Websites erstellt und mit HTML, CSS, Javascript und PHP gearbeitet.",
+    "text3": "Im Jahr 2019 nahm ich an Online-Kursen teil, um professionell in die Entwicklung von Webseiten und mobilen Apps einzusteigen. Dafür habe ich Kurse zu Angular und Ionic durchgearbeitet.",
+    "text4": "Seitdem bin ich als Freelancer für zwei Unternehmen tätig,",
+    "text5": "und",
+    "text6": "Ich bin für die Weiter- und Neu- Entwicklung komplexer Webseiten und mobiler Apps mit Angular und Ionic verantwortlich.",
+    "text7": "Während dieser Arbeit habe ich mich mit den CSS-Frameworks Bootstrap und Tailwinds sowie dem Cypress-Testframework beschäftigt.",
+    "text8": "Darüber hinaus verfüge ich über Kenntnisse in der Backend-Programmierung. Ich habe einige REST-APIs mit Node.js und NestJS geschrieben.",
+    "text9": "Ich spreche ausgezeichnet Englisch und fortgeschritten Kroatisch. Aber meine Muttersprache ist Deutsch.",
+    "text10": "Ich bin verheiratet und habe ein Kind.",
+    "mySkills": "Meine Fähigkeiten",
+    "curriculumVitae": "Lebenslauf"
+  },
+  "skills": {
+    "headline": "Programmiersprachen & Werkzeuge"
+  },
+  "portfolio": {
+    "contact": "Kontakt",
+    "vocabularyTrainer": {
+      "text1": "Web-App zum Erlernen der kroatischen Sprache. Realisiert mit Angular.",
+      "text2": "Android-App zum Erlernen der kroatischen Sprache. Realisiert mit Angular und Ionic.",
+      "sourceCode": "Quellcode"
+    },
+    "catchCups": {
+      "text1": "Im Auftrag der Firma",
+      "text2": "habe ich an einer mobilen App gearbeitet, die Messdaten einer Bewässerungsanlage für Rasen auswertet. Die App wurde mit Angular und Ionic erstellt."
+    },
+    "webaro": {
+      "text1": "Für die Firma",
+      "text2": ", habe ich an der Weiterentwicklung einer Web-App zur effizienten Planung und Auswertung von Drohnendaten im Agrarbereich gearbeitet. Realisiert mit Angular. Im Auftrag von"
+    }
+  },
+  "contact": {
+    "headline": "Lass uns Kontakt aufnehmen!",
+    "text1": "Bist du bereit, dein nächstes Projekt mit mir zu starten?",
+    "text2": "Schicke mir eine Nachricht!",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "message": "Nachricht",
+    "send": "Abschicken",
+    "sending": "Senden...",
+    "toast": {
+      "success": {
+        "headline": "Alles klar!",
+        "text": "Deine Nachricht wurde gesendet!"
+      },
+      "error": "Ein Fehler ist aufgetreten. Die Nachricht wurde nicht gesendet!"
+    }
+  },
+  "footer": {
+    "visitMe": "Besuche mich auf"
+  },
+  "sidebar": {
+    "home": "Start",
+    "aboutMe": "Über mich",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  }
+}

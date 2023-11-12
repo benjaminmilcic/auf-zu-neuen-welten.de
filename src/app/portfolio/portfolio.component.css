@@ -3,7 +3,6 @@ section {
   justify-content: center;
   text-align: center;
   padding: 3rem 0rem 10rem;
-  /* background-color: #fdbb2d99; */
 }
 
 .wrapper1,
@@ -14,7 +13,6 @@ section {
 }
 
 h3 {
-  /* color: rgb(236, 184, 7); */
   margin-bottom: 4rem;
   font-size: 2rem;
 }
@@ -41,7 +39,6 @@ h3 {
 
   .portfolio-item:hover .portfolio-caption .portfolio-caption-content {
     visibility: visible;
-    /* background-color: rgba(29, 128, 159, 0.7); */
     justify-content: center;
   }
 
@@ -113,11 +110,6 @@ h3 {
 .portfolio-caption-header {
   font-size: 1rem;
   font-weight: 900;
-}
-
-.portfolio-caption-text {
-  font-size: 1.25rem;
-  font-weight: 300;
 }
 
 .contact-button {
