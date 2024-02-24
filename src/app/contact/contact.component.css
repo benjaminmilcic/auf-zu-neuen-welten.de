@@ -1,17 +1,29 @@
 section {
-  /* background-image: url(../../assets/contact.webp);
-  background-size: cover;
-  background-position: center; */
-  background: linear-gradient(
-    180deg,
-    rgba(236, 184, 7, 1) 0%,
-    rgba(29, 128, 159, 1) 100%
-  );
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 3rem 0rem;
+  position: relative;
+}
+
+section:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url(../../assets/header.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
 }
 
 h2 {
@@ -23,7 +35,7 @@ hr {
 }
 
 .invitation {
-  color: white;
+  /* color: white; */
   font-weight: 700;
   margin-top: 2rem;
 }
@@ -31,7 +43,7 @@ hr {
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 5.5rem;
+  margin-top: 1.5rem;
 }
 
 .name {
@@ -72,6 +84,7 @@ label {
   line-height: 2rem;
   font-size: 1rem;
   padding-left: 5px;
+  border: 1px solid black;
 }
 
 input.ng-invalid.ng-touched,
@@ -103,7 +116,10 @@ button:disabled {
   opacity: 0.5;
 }
 
-a, a:hover, a:visited, a:active  {
+a,
+a:hover,
+a:visited,
+a:active {
   color: black;
 }
 
@@ -133,8 +149,8 @@ a, a:hover, a:visited, a:active  {
   }
 
   h2 {
-  font-size: 1.5rem;
-}
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {

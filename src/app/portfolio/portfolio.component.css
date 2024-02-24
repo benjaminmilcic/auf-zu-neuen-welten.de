@@ -3,6 +3,41 @@ section {
   justify-content: center;
   text-align: center;
   padding: 3rem 0rem 10rem;
+ 
+  position: relative;
+}
+
+section:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+   background-color: white;
+  background-image: radial-gradient(midnightblue 9px, transparent 10px),
+    repeating-radial-gradient(
+      midnightblue 0,
+      midnightblue 4px,
+      transparent 5px,
+      transparent 20px,
+      midnightblue 21px,
+      midnightblue 25px,
+      transparent 26px,
+      transparent 50px
+    );
+  background-size: 30px 30px, 90px 90px;
+  background-position: 0 0;
+}
+
+.content {
+  position: relative;
+}
+
+a:focus {
+  outline: none;
 }
 
 .wrapper1,
@@ -25,7 +60,7 @@ h3 {
   .portfolio-item img,
   .portfolio-item .portfolio-caption,
   .portfolio-item .portfolio-overlay {
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.15s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
@@ -47,7 +82,7 @@ h3 {
     .portfolio-link-wrapper
     .portfolio-overlay {
     opacity: 0.7;
-    transition: opacity 0.25s ease-out;
+    transition: opacity 0.35s ease-out;
   }
 }
 
@@ -127,6 +162,10 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
 }
 
+.contact-button:hover {
+  background-color: rgb(55, 65, 81);
+}
+
 .button-wrapper {
   margin-top: 6rem;
 }
@@ -147,7 +186,7 @@ dialog::backdrop {
   display: flex;
   justify-content: end;
   cursor: pointer;
-  color: white;
+  /* color: white; */
 }
 
 .dialog-close:hover {
@@ -172,11 +211,11 @@ dialog::backdrop {
 }
 
 .web-app-image {
-  width: 1200px;
+  width: 900px;
 }
 
 .android-app-image {
-  width: 400px;
+  width: 250px;
 }
 
 .webaro img {

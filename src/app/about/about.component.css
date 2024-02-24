@@ -3,37 +3,58 @@ section {
   justify-content: center;
   align-items: center;
   padding: 3rem 3rem 10rem;
-  /* background-color: #22c1c3; */
-  /* background: rgb(34, 193, 195); */
-  background: linear-gradient(
+position: relative;
+ 
+}
+
+section:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+   /* background: linear-gradient(
     35deg,
     rgba(29, 128, 159, 0.5) 0%,
     rgba(236, 184, 7, 0.5) 100%
+  ); */
+     background: linear-gradient(
+    35deg,
+    rgba(29, 128, 159, 1) 0%,
+    rgba(236, 184, 7, 1) 100%
   );
+
 }
 
-/* #1d809f */
+.content {
+  position: relative;
+}
 
 h3 {
   font-size: 2rem;
   margin-bottom: 4rem;
-  /* font-weight: 700; */
+
   text-align: center;
 }
 
-img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  float: left;
-  margin-right: 20px;
-}
+
 
 .about {
   font-size: 1.2rem;
   margin-bottom: 3rem;
   font-weight: 400;
   max-width: 900px;
+}
+
+a {
+  color: lightblue;
+}
+
+a:hover {
+  color: blue;
 }
 
 ul {
@@ -53,6 +74,11 @@ ul {
 
 .button:active {
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+
+.button:hover {
+  background-color:  rgb(55 ,65, 81);
+  color: white;
 }
 
 .button-wrapper {

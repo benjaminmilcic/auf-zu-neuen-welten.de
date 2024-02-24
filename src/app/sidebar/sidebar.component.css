@@ -46,9 +46,10 @@ a {
 
 .sidebar-brand {
   display: flex;
+  place-items: center;
   font-size: 1.2rem;
   background: rgba(52, 58, 64, 0.1);
-  height: 55px;
+  height: 80px;
   line-height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;

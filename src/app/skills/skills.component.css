@@ -1,11 +1,93 @@
 section {
-  background-color: rgb(29, 128, 159);
+  
   display: flex;
-  padding: 5rem 0rem 10rem;
+  flex-direction: column;
+  padding: 10rem 0rem 10rem;
+  position: relative;
 }
 
-.skills-wrapper {
+section:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  opacity: 0.3;
+ background-color: rgb(29, 128, 159);
+}
+
+.content {
+  position: relative;
+}
+
+
+.main {
+  position: relative;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  background-image: url(../../assets/workplacehome.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.circle {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.circle:nth-child(1) {
+  transform: translateX(250px);
+}
+
+.circle:nth-child(2) {
+  transform: rotate(28deg) translateX(250px);
+}
+
+.circle:nth-child(3) {
+  transform: rotate(55deg) translateX(250px);
+}
+
+.circle:nth-child(4) {
+  transform: rotate(83deg) translateX(250px);
+}
+
+.circle:nth-child(5) {
+  transform: rotate(111deg) translateX(250px);
+}
+.circle:nth-child(6) {
+  transform: rotate(138deg) translateX(250px);
+}
+.circle:nth-child(7) {
+  transform: rotate(166deg) translateX(250px);
+}
+.circle:nth-child(8) {
+  transform: rotate(194deg) translateX(250px);
+}
+.circle:nth-child(9) {
+  transform: rotate(222deg) translateX(250px);
+}
+.circle:nth-child(10) {
+  transform: rotate(249deg) translateX(250px);
+}
+.circle:nth-child(11) {
+  transform: rotate(278deg) translateX(250px);
+}
+.circle:nth-child(12) {
+  transform: rotate(305deg) translateX(250px);
+}
+.circle:nth-child(13) {
+  transform: rotate(332deg) translateX(250px);
 }
 
 h2 {
@@ -41,7 +123,9 @@ h3 {
 .languages-and-tools {
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
   max-width: 900px;
 }
 
@@ -49,7 +133,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   width: 100px;
 }
 
@@ -106,8 +189,9 @@ a:active {
 }
 
 .button-wrapper {
-  margin-top: 6rem;
+  margin-top: 12rem;
   text-align: center;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {

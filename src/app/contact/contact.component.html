@@ -1,5 +1,5 @@
 <section id="contact">
-  <div>
+  <div class="content">
     <h2>{{ "contact.headline" | translate }}</h2>
     <hr />
     <p class="invitation">
@@ -7,7 +7,17 @@
       <br />
       {{ "contact.text2" | translate }}
     </p>
-    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+     <div class="contact-wrapper">
+      <div>
+        <p><i class="fa-solid fa-phone"></i></p>
+        <p class="phone">+49 176 41942532</p>
+      </div>
+      <div>
+        <p><i class="fa-solid fa-envelope"></i></p>
+        <a href="mailto:benjamin.milcic@gmail.com">benjamin.milcic@gmail.com</a>
+      </div>
+    </div>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm" class="mt-6">
       <div class="name">
         <div class="firstname">
           <label for="firstname">{{ "contact.firstName" | translate }}</label>
@@ -33,21 +43,12 @@
           required
         ></textarea>
       </div>
-      <div class="send-button">
-        <button [disabled]="!form.valid || isSending" type="submit">
+      <div class="send-button ">
+        <button [disabled]="!form.valid || isSending" type="submit" class="!h-10 !p-0 !px-4">
           {{ sendButtonText }}
         </button>
       </div>
     </form>
-    <div class="contact-wrapper">
-      <div>
-        <p><i class="fa-solid fa-phone"></i></p>
-        <p class="phone">+49 176 41942532</p>
-      </div>
-      <div>
-        <p><i class="fa-solid fa-envelope"></i></p>
-        <a href="mailto:benjamin.milcic@gmail.com">benjamin.milcic@gmail.com</a>
-      </div>
-    </div>
+   
   </div>
 </section>

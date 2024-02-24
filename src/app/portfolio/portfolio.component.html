@@ -1,36 +1,41 @@
 <section id="portfolio">
-  <dialog
-    #vocabularyTrainerDialog
-    style="background-color: #1d819f; color: white"
-  >
+  <dialog #vocabularyTrainerDialog class="bg-[#4a9ab2] text-white p-4">
     <div class="dialog-close">
       <a (click)="vocabularyTrainerDialog.close()"><b>X</b></a>
     </div>
-    <div>
-      <h2>Vocabulary Trainer</h2>
+    <div class="flex flex-col place-items-center">
+      <div class="text-3xl mb-4">Vocabulary Trainer</div>
       <div>
-        <div>
-          <p>{{ "portfolio.vocabularyTrainer.text1" | translate }}</p>
+        <div class="flex flex-col place-items-center">
+          <p class="mb-8 text-lg">
+            {{ "portfolio.vocabularyTrainer.text1" | translate }}
+          </p>
           <img
             class="web-app-image"
             src="../../assets/learnlanguageapp.webp"
             alt="A Web App to learn Croatian Language"
           />
-          <div style="margin-top: 10px">
-            <a href="https://vocabularyinputapp.web.app" target="_blank"
+          <div class="mt-3">
+            <a
+              href="https://vocabularyinputapp.web.app"
+              target="_blank"
+              class="text-yellow-300 hover:text-yellow-400"
+              tabindex="-1"
               >https://vocabularyinputapp.web.app</a
             >
           </div>
-          <div style="margin-top: 10px">
+          <div class="mt-3">
             <a
               href="https://github.com/benjaminmilcic/LearnLanguageApp"
               target="_blank"
+              class="text-yellow-300 hover:text-yellow-400"
+              tabindex="-1"
               >{{ "portfolio.vocabularyTrainer.sourceCode" | translate }}</a
             >
           </div>
         </div>
-        <div style="margin-top: 40px">
-          <p>
+        <div class="mt-10 flex flex-col place-items-center">
+          <p class="mb-8 text-lg">
             {{ "portfolio.vocabularyTrainer.text2" | translate }}
           </p>
           <img
@@ -38,7 +43,7 @@
             src="../../assets/androidApp.webp"
             alt="A Web App to learn Croatian Language"
           />
-          <div>
+          <div class="mt-4">
             <a
               href="https://play.google.com/store/apps/details?id=io.ionic.learnlanguageapp"
               target="_blank"
@@ -52,6 +57,8 @@
             <a
               href="https://github.com/benjaminmilcic/learn-language-android-app"
               target="_blank"
+              class="text-yellow-300 hover:text-yellow-400"
+              tabindex="-1"
               >{{ "portfolio.vocabularyTrainer.sourceCode" | translate }}</a
             >
           </div>
@@ -59,21 +66,29 @@
       </div>
     </div>
   </dialog>
-  <dialog #catchCupDialog style="background-color: #efc32c; color: black">
+  <dialog #catchCupDialog class="text-black bg-[#f2cf56] p-4">
     <div class="dialog-close">
       <a (click)="catchCupDialog.close()"><b>X</b></a>
     </div>
     <div class="cc">
-      <h2>CatchCups</h2>
+      <div class="text-3xl mb-4">CatchCups</div>
       <div style="margin-bottom: 10px">
-        <a href="https://catchcups.com" target="_blank"
+        <a
+          href="https://catchcups.com"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-600"
           >https://catchcups.com</a
         >
       </div>
       <div class="cc-text" style="margin-bottom: 20px">
         <p>
           {{ "portfolio.catchCups.text1" | translate }}
-          <a href="https://codext.de/" target="_blank">Codext GmbH</a>,
+          <a
+            href="https://codext.de/"
+            target="_blank"
+            class="text-gray-500 hover:text-gray-600"
+            >Codext GmbH</a
+          >,
           {{ "portfolio.catchCups.text2" | translate }}
         </p>
       </div>
@@ -83,7 +98,7 @@
         <img src="../../assets/catchcups3.webp" alt="CatchCups" />
         <img src="../../assets/catchcups4.webp" alt="CatchCups" />
       </div>
-      <div style="margin-top: 20px">
+      <div class="mt-5 flex justify-center">
         <a
           href="https://play.google.com/store/apps/details?id=de.codext.catchcup"
           target="_blank"
@@ -95,42 +110,66 @@
       </div>
     </div>
   </dialog>
-  <dialog #webaroDialog style="background-color: #efc32c; color: black">
+  <dialog #webaroDialog class="text-black bg-[#f2cf56] p-4">
     <div class="dialog-close">
       <a (click)="webaroDialog.close()"><b>X</b></a>
     </div>
     <div class="webaro">
-      <h2>Webaro</h2>
+      <div class="text-3xl mb-4">Webaro</div>
       <div class="webaro-text">
-        <p>
+        <p class="mb-8 text-lg">
           {{ "portfolio.webaro.text1" | translate }}
-          <a href="https://webaro.de" target="_blank"
+          <a
+            href="https://webaro.de"
+            target="_blank"
+            class="text-gray-500 hover:text-gray-600"
             >Weber Agrar Robotik GmbH</a
           >{{ "portfolio.webaro.text2" | translate }}
-          <a href="https://codext.de" target="_blank">Codext GmbH</a>.
+          <a
+            href="https://codext.de"
+            target="_blank"
+            class="text-gray-500 hover:text-gray-600"
+            >Codext GmbH</a
+          >.
         </p>
       </div>
-      <div>
-        <img src="../../assets/webaro.webp" alt="Weber Agrar Robotik GmbH" />
-        <img src="../../assets/webaro1.webp" alt="Weber Agrar Robotik GmbH" />
-        <img src="../../assets/webaro2.webp" alt="Weber Agrar Robotik GmbH" />
-        <img src="../../assets/webaro3.webp" alt="Weber Agrar Robotik GmbH" />
+      <div class="flex flex-col place-items-center gap-4">
+        <img
+          src="../../assets/webaro.webp"
+          alt="Weber Agrar Robotik GmbH"
+          class="max-w-[900px]"
+        />
+        <img
+          src="../../assets/webaro1.webp"
+          alt="Weber Agrar Robotik GmbH"
+          class="max-w-[900px]"
+        />
+        <img
+          src="../../assets/webaro2.webp"
+          alt="Weber Agrar Robotik GmbH"
+          class="max-w-[900px]"
+        />
       </div>
       <div style="margin-top: 20px">
-        <a href="https://webaro.dev" target="_blank">https://webaro.dev</a>
+        <a
+          href="https://webaro.dev"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-600"
+          >https://webaro.dev</a
+        >
       </div>
     </div>
   </dialog>
-  <div>
+  <div class="content">
     <h3>Portfolio</h3>
     <div class="wrapper1">
-      <div class="portfolio-item">
+      <div class="portfolio-item m-4">
         <a
           style="cursor: pointer"
           (click)="vocabularyTrainerDialog.showModal()"
         >
           <div class="portfolio-image-wrapper">
-            <div class="portfolio-link-wrapper">
+            <div class="portfolio-link-wrapper rounded-lg">
               <img
                 class="portfolio-image"
                 src="assets/vocabularyTrainer.webp"
@@ -143,7 +182,7 @@
             </div>
           </div>
 
-          <div class="portfolio-caption">
+          <div class="portfolio-caption  rounded-lg">
             <div class="portfolio-caption-content">
               <div>
                 <p class="portfolio-caption-header">Vocabulary Trainer</p>
@@ -152,10 +191,10 @@
           </div>
         </a>
       </div>
-      <div class="portfolio-item">
+      <div class="portfolio-item m-4">
         <a style="cursor: pointer" (click)="catchCupDialog.showModal()">
           <div class="portfolio-image-wrapper">
-            <div class="portfolio-link-wrapper">
+            <div class="portfolio-link-wrapper rounded-lg">
               <img
                 class="portfolio-image"
                 src="assets/catchCups.webp"
@@ -168,7 +207,7 @@
             </div>
           </div>
 
-          <div class="portfolio-caption">
+          <div class="portfolio-caption rounded-lg">
             <div class="portfolio-caption-content">
               <div>
                 <p class="portfolio-caption-header">CatchCups</p>
@@ -179,10 +218,10 @@
       </div>
     </div>
     <div class="wrapper2">
-      <div class="portfolio-item">
+      <div class="portfolio-item m-4">
         <a style="cursor: pointer" (click)="webaroDialog.showModal()">
           <div class="portfolio-image-wrapper">
-            <div class="portfolio-link-wrapper">
+            <div class="portfolio-link-wrapper rounded-lg">
               <img
                 class="portfolio-image"
                 src="assets/webaro.webp"
@@ -195,7 +234,7 @@
             </div>
           </div>
 
-          <div class="portfolio-caption">
+          <div class="portfolio-caption rounded-lg">
             <div class="portfolio-caption-content">
               <div>
                 <p class="portfolio-caption-header">Webaro</p>
@@ -204,7 +243,7 @@
           </div>
         </a>
       </div>
-      <div class="portfolio-item">
+      <div class="portfolio-item m-4">
         <div class="portfolio-image-wrapper">
           <div class="portfolio-link-wrapper">
             <div style="width: 530px"></div>
