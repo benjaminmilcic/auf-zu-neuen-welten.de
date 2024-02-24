@@ -56,11 +56,15 @@
       <div class="flex place-items-center mt-6 gap-4">
         <img src="/assets/PDF_file_icon.svg.png" width="24" />
 
-        <a *ngIf="translateService.currentLang == 'de'" href="/assets/CV_DE.pdf"
-          >Laden Sie hier meinen Lebenslauf herunter</a
+        <a
+          *ngIf="translateService.currentLang == 'de'"
+          href="/assets/CV_DE.pdf"
+          ><span>{{ "about.downloadCV" | translate }}</span></a
         >
-        <a *ngIf="translateService.currentLang == 'en'" href="/assets/CV_EN.pdf"
-          >Laden Sie hier meinen Lebenslauf herunter</a
+        <a
+          *ngIf="translateService.currentLang == 'en'"
+          href="/assets/CV_EN.pdf"
+          ><span>{{ "about.downloadCV" | translate }}</span></a
         >
       </div>
     </div>
