@@ -1,181 +1,328 @@
 <section id="skills">
-  <div class="flex justify-center w-full content">
-    <div class="main hidden md:block">
-      <div class="circle">
+  <div class="flex-col place-items-center w-full content hidden md:flex">
+    <h3 class="mb-40">Skills</h3>
+    <div class="main">
+      <div
+        class="flex place-content-center justify-center w-[350px] h-[350px] rounded-full relative"
+        [tooltip]="'skills.workplace' | translate"
+      >
+      </div>
+      <div
+        class="circle group cursor-pointer"
+        (click)="
+          openLink(
+            'https://wikipedia.org/wiki/HTML5#:~:text=HTML5%20ist%20die%20f%C3%BCnfte%20Fassung,vorwiegend%20im%20World%20Wide%20Web.'
+          )
+        "
+      >
         <img src="assets/svg/html5.svg" width="36px" />
-        <p class="mt-1">HTML5</p>
+        <p class="group-hover:font-bold mt-1">HTML5</p>
       </div>
-      <div class="circle">
+
+      <div
+        class="circle group cursor-pointer"
+        (click)="
+          openLink('https://wikipedia.org/wiki/Cascading_Style_Sheets#CSS3')
+        "
+      >
         <img src="assets/svg/css3.svg" width="36px" class="rotate-[-28deg]" />
-        <p class="ml-10 rotate-[-28deg]">CSS3</p>
+        <p class="group-hover:font-bold ml-10 rotate-[-28deg]">CSS3</p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="
+          openLink(
+            'https://wikipedia.org/wiki/JavaScript#:~:text=JavaScript%20(kurz%20JS)%20ist%20eine,M%C3%B6glichkeiten%20von%20HTML%20zu%20erweitern.'
+          )
+        "
+      >
         <img src="assets/svg/js.svg" width="36px" class="rotate-[-55deg]" />
-        <p class="ml-14 -mt-2 rotate-[-55deg]">JavaScript</p>
+        <p class="group-hover:font-bold ml-14 -mt-2 rotate-[-55deg]">
+          JavaScript
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://angular.io/')"
+      >
         <img
           src="assets/svg/angular.svg"
           width="36px"
           class="rotate-[-83deg]"
         />
-        <p class="ml-16 -mt-7 rotate-[-83deg]">Angular</p>
+        <p class="group-hover:font-bold ml-16 -mt-7 rotate-[-83deg]">Angular</p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://ionicframework.com/')"
+      >
         <img src="assets/svg/ionic.svg" width="36px" class="rotate-[-111deg]" />
-        <p class="rotate-[-111deg] -mt-[42px] ml-16">Ionic</p>
+        <p class="group-hover:font-bold rotate-[-111deg] -mt-[42px] ml-16">
+          Ionic
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://www.cypress.io/')"
+      >
         <img
           src="assets/svg/cypress.svg"
           width="36px"
           class="rotate-[-138deg]"
         />
-        <p class="rotate-[-138deg] -mt-14 ml-11">Cypress</p>
+        <p class="group-hover:font-bold rotate-[-138deg] -mt-14 ml-11">
+          Cypress
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://getbootstrap.com/')"
+      >
         <img
           src="assets/svg/bootstrap.svg"
           width="36px"
           class="rotate-[-166deg]"
         />
-        <p class="rotate-[-166deg] -mt-16 ml-6">Bootstrap</p>
+        <p class="group-hover:font-bold rotate-[-166deg] -mt-16 ml-6">
+          Bootstrap
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://tailwindcss.com/')"
+      >
         <img
           src="assets/svg/tailwind.svg"
           width="36px"
           class="rotate-[-194deg]"
         />
-        <p class="rotate-[-194deg] -mt-14 -ml-2">Tailwind</p>
+        <p class="group-hover:font-bold rotate-[-194deg] -mt-14 -ml-2">
+          Tailwind
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://www.mysql.com')"
+      >
         <img src="assets/svg/mysql.svg" width="36px" class="rotate-[-222deg]" />
-        <p class="rotate-[-222deg] -mt-14 -ml-12">MySQL</p>
+        <p class="group-hover:font-bold rotate-[-222deg] -mt-14 -ml-12">
+          MySQL
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://nodejs.org')"
+      >
         <img
           src="assets/svg/nodejs.svg"
           width="64px"
           class="rotate-[-249deg]"
         />
-        <p class="rotate-[-249deg] -mt-12 -ml-16">Node.js</p>
+        <p class="group-hover:font-bold rotate-[-249deg] -mt-12 -ml-16">
+          Node.js
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://nestjs.com/')"
+      >
         <img src="assets/svg/nestjs.svg" class="rotate-[-278deg]" />
-        <p class="rotate-[-278deg] -mt-8 -ml-20">NestJS</p>
+        <p class="group-hover:font-bold rotate-[-278deg] -mt-8 -ml-20">
+          NestJS
+        </p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://www.npmjs.com/')"
+      >
         <img src="assets/svg/npm.svg" class="rotate-[-305deg]" />
-        <p class="rotate-[-305deg] -mt-2 -ml-12">npm</p>
+        <p class="group-hover:font-bold rotate-[-305deg] -mt-2 -ml-12">npm</p>
       </div>
-      <div class="circle">
+      <div
+        class="circle group cursor-pointer"
+        (click)="openLink('https://www.docker.com/')"
+      >
         <img
           src="assets/svg/docker.svg"
           width="36px"
           class="rotate-[-332deg]"
         />
-        <p class="rotate-[-332deg] -ml-8">Docker</p>
+        <p class="group-hover:font-bold rotate-[-332deg] -ml-8">Docker</p>
       </div>
     </div>
   </div>
   <div class="skills-wrapper md:hidden content">
-    <div class="p-6 flex justify-center">
+    <h3 class="mb-4">Skills</h3>
+    <div class="p-6 flex justify-center mb-4">
       <div class="max-w-96">
-        <img src="/assets/workplacehome.jpg" class="rounded-lg" />
+        <img
+          src="/assets/workplacehome.webp"
+          class="rounded-lg"
+          [tooltip]="'skills.workplace' | translate"
+        />
       </div>
     </div>
 
     <div class="l-and-t-wrapper">
       <ul class="languages-and-tools">
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="
+              openLink(
+                'https://wikipedia.org/wiki/HTML5#:~:text=HTML5%20ist%20die%20f%C3%BCnfte%20Fassung,vorwiegend%20im%20World%20Wide%20Web.'
+              )
+            "
+          >
             <img src="assets/svg/html5.svg" />
-            <p class="!text-black">HTML5</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">HTML5</p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="
+              openLink('https://wikipedia.org/wiki/Cascading_Style_Sheets#CSS3')
+            "
+          >
             <img src="assets/svg/css3.svg" />
-            <p class="!text-black">CSS3</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">CSS3</p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="
+              openLink(
+                'https://wikipedia.org/wiki/JavaScript#:~:text=JavaScript%20(kurz%20JS)%20ist%20eine,M%C3%B6glichkeiten%20von%20HTML%20zu%20erweitern.'
+              )
+            "
+          >
             <img src="assets/svg/js.svg" />
-            <p class="!text-black">JavaScript</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              JavaScript
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://angular.io/')"
+          >
             <img src="assets/svg/angular.svg" />
-            <p class="!text-black">Angular</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Angular
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://ionicframework.com/')"
+          >
             <img src="assets/svg/ionic.svg" />
-            <p class="!text-black">Ionic</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">Ionic</p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://www.cypress.io/')"
+          >
             <img src="assets/svg/cypress.svg" />
-            <p class="!text-black">Cypress</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Cypress
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://getbootstrap.com/')"
+          >
             <img src="assets/svg/bootstrap.svg" />
-            <p class="!text-black">Bootstrap</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Bootstrap
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://tailwindcss.com/')"
+          >
             <img src="assets/svg/tailwind.svg" />
-            <p class="!text-black">Tailwinds</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Tailwinds
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://firebase.google.com/')"
+          >
             <img src="assets/svg/firebase.svg" width="32px" />
-            <p class="!text-black">Firebase</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Firebase
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://www.mysql.com')"
+          >
             <img src="assets/svg/mysql.svg" />
-            <p class="!text-black">MySQL</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">MySQL</p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://nodejs.org')"
+          >
             <img src="assets/svg/nodejs.svg" width="64px" />
-            <p class="!text-black">Node.js</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Node.js
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://nestjs.com/')"
+          >
             <img src="assets/svg/nestjs.svg" />
-            <p class="!text-black">NestJS</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              NestJS
+            </p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://www.npmjs.com/')"
+          >
             <img src="assets/svg/npm.svg" />
-            <p class="!text-black">npm</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">npm</p>
           </div>
         </li>
         <li>
-          <div class="item-wrapper">
+          <div
+            class="item-wrapper group cursor-pointer"
+            (click)="openLink('https://www.docker.com/')"
+          >
             <img src="assets/svg/docker.svg" />
-            <p class="!text-black">Docker</p>
+            <p class="!text-black !font-normal group-hover:!font-bold">
+              Docker
+            </p>
           </div>
         </li>
       </ul>
     </div>
   </div>
-  <div class="button-wrapper">
+  <div class="relative text-center mt-20 md:mt-48">
     <a href="#portfolio">Portfolio</a>
   </div>
 </section>

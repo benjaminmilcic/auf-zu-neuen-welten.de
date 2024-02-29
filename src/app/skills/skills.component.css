@@ -2,7 +2,7 @@ section {
   
   display: flex;
   flex-direction: column;
-  padding: 10rem 0rem 10rem;
+  padding: 3rem 0rem 10rem;
   position: relative;
 }
 
@@ -15,7 +15,7 @@ section:before {
   width: 100%;
   height: 100%;
   opacity: 0.3;
- background-color: rgb(29, 128, 159);
+ background: radial-gradient(#B1C9DBff, #605843ff, #CDBA9Cff);
 }
 
 .content {
@@ -28,7 +28,7 @@ section:before {
   border-radius: 50%;
   width: 350px;
   height: 350px;
-  background-image: url(../../assets/workplacehome.jpg);
+  background-image: url(../../assets/workplacehome.webp);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -46,47 +46,47 @@ section:before {
   color: black;
 }
 
-.circle:nth-child(1) {
+.circle:nth-child(2) {
   transform: translateX(250px);
 }
 
-.circle:nth-child(2) {
+.circle:nth-child(3) {
   transform: rotate(28deg) translateX(250px);
 }
 
-.circle:nth-child(3) {
+.circle:nth-child(4) {
   transform: rotate(55deg) translateX(250px);
 }
 
-.circle:nth-child(4) {
+.circle:nth-child(5) {
   transform: rotate(83deg) translateX(250px);
 }
 
-.circle:nth-child(5) {
+.circle:nth-child(6) {
   transform: rotate(111deg) translateX(250px);
 }
-.circle:nth-child(6) {
+.circle:nth-child(7) {
   transform: rotate(138deg) translateX(250px);
 }
-.circle:nth-child(7) {
+.circle:nth-child(8) {
   transform: rotate(166deg) translateX(250px);
 }
-.circle:nth-child(8) {
+.circle:nth-child(9) {
   transform: rotate(194deg) translateX(250px);
 }
-.circle:nth-child(9) {
+.circle:nth-child(10) {
   transform: rotate(222deg) translateX(250px);
 }
-.circle:nth-child(10) {
+.circle:nth-child(11) {
   transform: rotate(249deg) translateX(250px);
 }
-.circle:nth-child(11) {
+.circle:nth-child(12) {
   transform: rotate(278deg) translateX(250px);
 }
-.circle:nth-child(12) {
+.circle:nth-child(13) {
   transform: rotate(305deg) translateX(250px);
 }
-.circle:nth-child(13) {
+.circle:nth-child(14) {
   transform: rotate(332deg) translateX(250px);
 }
 
@@ -110,9 +110,6 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  color: white;
-  margin: 0rem 3rem 3rem;
-  text-align: left;
 }
 
 .l-and-t-wrapper {
@@ -188,12 +185,6 @@ a:active {
   box-shadow: 0 0 0 0.25rem rgba(201, 156, 6, 0.5);
 }
 
-.button-wrapper {
-  margin-top: 12rem;
-  text-align: center;
-  position: relative;
-}
-
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 2rem;
@@ -211,7 +202,7 @@ a:active {
 
 @media screen and (max-width: 600px) {
   section {
-    padding: 5rem 0rem 3rem;
+    padding: 3rem 0rem 3rem;
   }
 
   a {

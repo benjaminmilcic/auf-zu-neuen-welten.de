@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent{
 
+  openLink(url:string) {
+    window.open(url, '_blank');
+  }
+
 }
